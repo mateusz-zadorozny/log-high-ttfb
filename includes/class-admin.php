@@ -308,6 +308,17 @@ class Admin {
         return $clean;
     }
 
+    private function get_options(): array {
+        $defaults = [
+            'enable_email'     => 0,
+            'email_recipients' => get_option( 'admin_email' ),
+        ];
+
+        $options = get_option( Plugin::OPTION_KEY, [] );
+
+        return wp_parse_args( $options, $defaults );
+    }
+
     private function render_similarity_table( string $heading, array $rows ): void {
         ?>
         <div class="postbox">

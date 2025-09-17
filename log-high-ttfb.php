@@ -7,7 +7,7 @@
  * Author URI:      https://zadorozny.rocks
  * Text Domain:     log-high-ttfb
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         0.1.1
  *
  * @package         Log_High_TTFB
  */
